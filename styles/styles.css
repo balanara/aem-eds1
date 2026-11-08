@@ -99,6 +99,10 @@ footer .footer[data-block-status="loaded"] {
   visibility: visible;
 }
 
+header-wrapper {
+  background-color: var(--background-color-eds1);
+}
+
 h1,
 h2,
 h3,
