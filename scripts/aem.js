@@ -525,6 +525,7 @@ function buildBlock(blockName, content) {
     });
     blockEl.appendChild(rowEl);
   });
+  blockEl.appendChild(content);
   return blockEl;
 }
 
