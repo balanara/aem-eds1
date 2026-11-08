@@ -607,7 +607,6 @@ async function loadHeader(header) {
   }
   console.log(header);
   console.log(headerBlock);
-  headerBlock.append("<div>AEM - EDS1</div>")
   decorateBlock(headerBlock);
   return loadBlock(headerBlock);
 }
