@@ -507,7 +507,6 @@ function buildBlock(blockName, content) {
   const blockEl = document.createElement('div');
   // build image block nested div structure
   blockEl.classList.add(blockName);
-  blockEl.innerHTML = "Hi";
   table.forEach((row) => {
     const rowEl = document.createElement('div');
     row.forEach((col) => {
@@ -608,6 +607,8 @@ async function loadHeader(header) {
   console.log(header);
   console.log(headerBlock);
   decorateBlock(headerBlock);
+    console.log(header);
+  console.log(headerBlock);
   return loadBlock(headerBlock);
 }
 
