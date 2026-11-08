@@ -598,13 +598,15 @@ function decorateBlocks(main) {
  * @returns {Promise}
  */
 async function loadHeader(header) {
-  const headerBlock = buildBlock('header', 'Hello!!!!');
+  const headerBlock = buildBlock('header', '');
   const existingHeaderBlock = header.querySelector(':scope > .header');
   if (existingHeaderBlock) {
     existingHeaderBlock.replaceWith(headerBlock);
   } else {
     header.append(headerBlock);
   }
+  console.log(header);
+  console.log(headerBlock);
   headerBlock.append("<div>AEM - EDS1</div>")
   decorateBlock(headerBlock);
   return loadBlock(headerBlock);
