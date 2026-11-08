@@ -597,7 +597,7 @@ function decorateBlocks(main) {
  * @returns {Promise}
  */
 async function loadHeader(header) {
-  const headerBlock = buildBlock('header', '');
+  const headerBlock = buildBlock('header', 'Hello!!!!');
   const existingHeaderBlock = header.querySelector(':scope > .header');
   if (existingHeaderBlock) {
     existingHeaderBlock.replaceWith(headerBlock);
